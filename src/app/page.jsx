@@ -1,5 +1,7 @@
 import React from 'react'
 import classes from './login/login.module.css'
+import MyButton from '@/components/Button';
+import TextInput from '@/components/Input';
 
 const Home = () => {
   return (
@@ -8,7 +10,17 @@ const Home = () => {
       <button style={{ backgroundColor:'black', color:'white', padding:10}}>Home Button</button>
       <button className="submit-btn">Home button</button>
       <button className={classes.btn}>What a Button</button>
-      <img src="/sponge.webp" alt="" />
+      <img style={{
+        width:200
+      }} src="/sponge.webp" />
+      <MyButton>my custom button</MyButton>
+      <MyButton>Login</MyButton>
+      <MyButton>my button</MyButton>
+      <MyButton>Submit</MyButton>
+
+      <TextInput type="password" label="Enter a password" id="password" />
+      <TextInput type="text" label="Full name" id="name"/>
+      <TextInput type="email" label="Email Address" id="email"/>
     </div>
   )
 }
