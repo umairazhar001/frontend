@@ -26,6 +26,7 @@ export default function RootLayout({ children }) {
       >
         <Navbar/>
         {children}
+        <h1>Website Footer</h1>
       </body>
     </html>
   );
